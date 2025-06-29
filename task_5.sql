@@ -5,7 +5,7 @@ from mysql.connector import Error
 DB_HOST = "localhost"
 DB_USER = "root"     
 DB_PASSWORD = "####" 
-DATABASE_NAME = "alx_book_store" # The database where your Customers table is
+DATABASE_NAME = "alx_book_store" # The database where the Customers table is
 
 # --- Data to Insert ---
 customer_data = (1, "Cole Baidoo", "cbaidoo@sandtech.com", "123 Happiness Ave.")
