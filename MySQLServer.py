@@ -28,7 +28,7 @@ try:
         # SQL statement to create the database if it doesn't exist
         # This adheres to the "not fail if database already exists" and
         # "no SELECT or SHOW statements" requirements.
-        create_db_query = f"CREATE DATABASE IF NOT EXISTS {NEW_DATABASE_NAME}"
+        create_db_query = f"CREATE DATABASE IF NOT EXISTS alx_book_store"
 
         print(f"Executing query: {create_db_query}")
         mycursor.execute(create_db_query)
