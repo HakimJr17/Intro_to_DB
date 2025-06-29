@@ -19,3 +19,10 @@ customer_name VARCHAR(215) NOT NULL,
 email VARCHAR(215) NOT NULL,
 address TEXT
 );
+
+CREATE TABLE Orders (
+    order_id INT PRIMARY KEY NOT NULL,
+    customer_id INT NOT NULL,
+    order_date DATE,
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
+    )
