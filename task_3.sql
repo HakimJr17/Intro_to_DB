@@ -3,7 +3,7 @@ from mysql.connector import Error
 
 # --- Configuration ---
 DB_HOST = "localhost"
-DB_USER = "root"   
+DB_USER = "root"    
 DB_PASSWORD = "####" 
 DATABASE_NAME = "alx_book_store"  # The database you want to list tables from
 
@@ -24,6 +24,10 @@ try:
     if mydb.is_connected():
         print(f"Successfully connected to database '{DATABASE_NAME}'.")
         mycursor = mydb.cursor()
+
+        print(f"Executing USE {DATABASE_NAME};")
+        mycursor.execute(f"USE {DATABASE_NAME};")
+
 
         # 2. Define the SQL query to show tables
         sql_query = "SHOW TABLES;"
