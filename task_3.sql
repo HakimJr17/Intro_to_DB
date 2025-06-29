@@ -11,6 +11,8 @@ DATABASE_NAME = "alx_book_store"  # The database you want to list tables from
 mydb = None
 mycursor = None
 
+USE alx_book_store;
+
 try:
     # 1. Establish a connection to the specific database
     print(f"Attempting to connect to database '{DATABASE_NAME}' on {DB_HOST}...")
