@@ -4,7 +4,7 @@ from mysql.connector import Error
 # --- Configuration ---
 DB_HOST = "localhost"
 DB_USER = "root" 
-DB_PASSWORD = "1234" 
+DB_PASSWORD = "####" 
 NEW_DATABASE_NAME = "alx_book_store"
 
 # --- Database Connection and Creation ---
