@@ -26,8 +26,6 @@ try:
         mycursor = mydb.cursor()
 
         # SQL statement to create the database if it doesn't exist
-        # This adheres to the "not fail if database already exists" and
-        # "no SELECT or SHOW statements" requirements.
         create_db_query = f"CREATE DATABASE IF NOT EXISTS alx_book_store"
 
         print(f"Executing query: {create_db_query}")
@@ -36,12 +34,12 @@ try:
         # Commit changes to ensure the database creation is saved
         mydb.commit()
 
-        # Print success message as required
+        # Print success message
         print(f"Database '{NEW_DATABASE_NAME}' created successfully!")
     else:
         print("Failed to establish a connection to MySQL server.")
 
-except Error as e:
+except mysql.connector.Error as e:
     # Handle connection and other database-related errors
     print(f"Error: Failed to connect to the database or execute query: {e}")
     # You can add more specific error handling based on e.errno if needed
