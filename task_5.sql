@@ -29,7 +29,7 @@ try:
         mycursor = mydb.cursor()
 
         # 2. SQL INSERT statement with placeholders
-        sql = "INSERT INTO Customers (customer_id, customer_name, email, address) VALUES (%s, %s, %s, %s)"
+        sql = "INSERT INTO Customer (customer_id, customer_name, email, address) VALUES (%s, %s, %s, %s)"
 
         # 3. Execute the SQL statement with the data
         print(f"Inserting customer data: {customer_data}...")
