@@ -12,3 +12,10 @@ author_id INT NOT NULL,
 price DOUBLE,
 publication_date DATE
 );
+
+CREATE TABLE Customers (
+customer_id INT PRIMARY KEY NOT NULL,
+customer_name VARCHAR(215) NOT NULL,
+email VARCHAR(215) NOT NULL,
+address TEXT
+);
