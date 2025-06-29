@@ -9,8 +9,8 @@ DATABASE_NAME = "alx_book_store" # The database where your Customers table is
 
 # --- Data to Insert ---
 customer_data = (2, "Blessing Malik", "bmalik@sandtech.com", "124 Happiness  Ave."),
-                (3, "Obed Ehoneah", "eobed@sandtech.com", "125 Happiness Ave."),
-                (4, "Nehemial Kamolu", "nkamolu@sandtech.com", "126 Happiness Ave.");
+                (3, "Obed Ehoneah", "eobed@sandtech.com", "125 Happiness  Ave."),
+                (4, "Nehemial Kamolu", "nkamolu@sandtech.com", "126 Happiness  Ave.");
 
 # --- Database Connection and Data Insertion Logic ---
 mydb = None
